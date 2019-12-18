@@ -5,15 +5,33 @@ html {
 --text-secondary-color : #FEFEDF;
 }
 body{
-  background: url(https://source.unsplash.com/random/400x400);
+  background: #D5CABD;
   background-repeat: no-repeat;
   background-size: contain;
   background- position: right center;
   font-family: 'Gupter', serif;
+  font-size : 10px;
 }
 
 
 h1{
   color: var(--primary-color);
+  font-size: 7em;
 }
+h2{
+font-size:5em;
+}
+
+p{
+  font-size: 2.5em;
+}
+nav{
+  font-size: 2em;
+}
+header{
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--text-primary-color)
+}
+
 
