@@ -2,7 +2,7 @@ html {
 --primary-color:--#FFFFFF;
 --secondary-color #808080 ;
 --third-color: #D5CABD;
---text-primary-color :#00C9A7;
+--text-primary-color :#a6a6a6;
 --text-secondary-color : #FEFEDF;
 }
 body{
@@ -15,13 +15,13 @@ body{
 }
 header{
   text-align: center;
-  padding: 1rem;
+  padding: .1rem;
   background-color: var(--primary-color)
 }
 
 h1{
-  color: var(--secondary-color);
-  font-size: 7em;
+  color: #a6a6a6;
+  font-size: 5em;
 }
 h2{
 font-size:5em;
@@ -62,6 +62,9 @@ footer{
   text-decoration: none;
   color: var(--text-primary-color)
 }
+.flex{
+  display:flex;
+}
 .mobile-hidden{
   display:none;
 }
@@ -73,6 +76,9 @@ footer{
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .flex--sm{
+    display: flex;
   }
 }
 
