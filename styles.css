@@ -10,13 +10,14 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background- position: right center;
-  font-family: 'Gupter', serif;
+  font-family: "Brandon Grotesque Thin", serif;
   font-size : 10px;
 }
 header{
   text-align: center;
   padding: .1rem;
-  background-color: var(--primary-color)
+  background-color: var(--primary-color);
+  font-family: "brandon-grotesque", serif;
 }
 
 h1{
