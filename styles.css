@@ -70,6 +70,7 @@ form{
 form div{
   background-color: red;
   margin-bottom: 0.25rem;
+  max-width: 18vw;
   width: 78vw;
 }
 
