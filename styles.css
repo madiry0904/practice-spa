@@ -24,48 +24,81 @@ h1{
   color: #a6a6a6;
   font-size: 5em;
 }
+
 h2{
 font-size:5em;
 }
+
 ul{
   list-style-type: none;
   padding: 0;
 }
+
 nav ul{
   font-size: 2em;
   display: flex;
   justify-content: space-around;
 }
-p{
-  font-size: 2.5em;
+
+p,
+input,
+label,
+button{
+  font-size: 1.777em;
   text-align:center;
   padding: 0 2rem;
+}
+
+label{
+  margin-right: 0.25rem;
+}
+
+input{
+  border: solid, thin, red;
+  border-radius: 3px;
+
 }
 
 figure,
 img{
 max-width: 100%;
-
-
 }
+
+form{
+  padding: 1rem;
+}
+form div{
+  background-color: red;
+  margin-bottom: 0.25rem;
+}
+
 footer{
   background-color: var(--text-secondary-color);
   padding: 1.5rem;
   text-align :center;
 }
 
+
 .button{
   background-color: var(--text-secondary-color);
   padding: 0.5rem;
   border-radius: 3px
 }
+
+.button--submit{
+  background-color: green;
+  color: white;
+}
+
 .button a{
   text-decoration: none;
   color: var(--text-primary-color)
 }
+
 .flex{
   display:flex;
 }
+
 .mobile-hidden{
   display:none;
 }
