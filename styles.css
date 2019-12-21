@@ -70,6 +70,7 @@ form{
 form div{
   background-color: red;
   margin-bottom: 0.25rem;
+  width: 78vw;
 }
 
 footer{
@@ -103,6 +104,13 @@ footer{
   display:none;
 }
 
+.justify-space-around{
+justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
 @media screen and (min-width: 885px){
   #yoga {
     background: url("http://static1.squarespace.com/static/4fed272c84ae1a1ffc110128/t/5b744276cd8366c5496db1fd/1534345851715/omfest.jpg?format=1500w");
