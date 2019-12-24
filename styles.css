@@ -11,8 +11,9 @@ body {
   height: 100vh; /* viewport heights */
 }
 h1 {
-  color: var(--text-primary-color);
+  color:gray;
   font-size: 4.209em;
+
 }
 h2 {
   font-size: 3.157em;
@@ -34,13 +35,17 @@ img {
   max-width: 100%;
 }
 header {
-  background-color: var(--primary-color);
-  padding: 1rem;
-  text-align: center;
+  background-color: white;
+  padding: .5rem;
+  text-align: left;
 }
-ul {
+header ul{
+  font-size: 1em;
+  display: flex;
+  justify-content: space-around;
+  float: right;
   list-style-type: none;
-  padding: 0;
+  padding: 0.2rem;
 }
 p {
   margin: 0;
@@ -62,6 +67,10 @@ footer {
   padding: 1.5rem;
   text-align: center;
 }
+
+form {
+  text-align: center;
+}
 /* Scope this for just #gallery. */
 #gallery div {
   border-bottom: solid thin var(--secondary-color);
@@ -69,6 +78,7 @@ footer {
   padding-bottom: 2rem;
   text-align: center;
 }
+
 .button {
   background: var(--secondary-color);
   border-radius: 3px;
@@ -108,8 +118,8 @@ footer {
   }
 }
 @media screen and (min-width: 885px) {
-  #hero {
-    background: url(https://source.unsplash.com/random/800x600) top center
+  #yoga {
+    background: url(https://i.pinimg.com/originals/28/39/af/2839aff2b83bb7f66605b02edf763ab2.jpg) top center
       no-repeat;
     background-size: cover;
     height: 75vh;
