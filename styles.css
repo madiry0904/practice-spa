@@ -115,6 +115,9 @@ justify-content: space-around;
 .justify-space-between {
   justify-content: space-between;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 
 @media screen and (min-width: 768px){
   form {
@@ -139,8 +142,33 @@ display: flex;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .flex--med{
+    display-: flex;
+  }
+
   .flex--sm{
     display: flex;
   }
+
 }
+
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+​
+#gallery div {
+  border-bottom: solid thin;
+  background-color: magenta;
+  border-radius: 0.5rem;
+  box-shadow: 12px 12px 2px 1px rgba(255, 0, 255, 0.6);
+  margin: 2rem 0;
+  text-align: center;
+  width: calc(33vw - 1rem);
+}
+
+
+
+
 
