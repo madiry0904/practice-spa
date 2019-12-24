@@ -70,7 +70,7 @@ form{
   padding: 1rem;
 }
 form div{
-  background-color: red;
+  background-color: powderblue;
   margin-bottom: 0.25rem;
   max-width: 18vw;
   width: 78vw;
@@ -86,11 +86,12 @@ footer{
 .button{
   background-color: var(--text-secondary-color);
   padding: 0.5rem;
-  border-radius: 3px
+  border-radius: 3px;
+  align-items: flex-end;
 }
 
 .button--submit{
-  background-color: green;
+  background-color: -- pink;
   color: white;
 }
 
