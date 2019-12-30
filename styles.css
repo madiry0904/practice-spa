@@ -20,7 +20,7 @@ img{
 }
 
 h2{
-  font-size: 2em;
+  font-size: 1.8em;
   padding: .25em;
   margin: 0;
   text-align: center;
@@ -78,11 +78,21 @@ p{
 }
 
 .flex figure img{
-  height: 30vh;
-  width: 100vw;
+  height: 40vh;
+  width: 80vw;
   padding: 0;
   margin: 0 .5rem;
 }
+
+.pic-paragraph figure img{
+float: left;
+}
+
+.pic-paragraph span{
+  float: right;
+}
+
+
 
 #mental-health-awareness{
   background: url(https://i.pinimg.com/originals/28/39/af/2839aff2b83bb7f66605b02edf763ab2.jpg)
@@ -92,5 +102,4 @@ p{
   height: 75vh;
   width: 100vw;
 }
-
 
