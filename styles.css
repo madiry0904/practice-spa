@@ -84,11 +84,12 @@ p{
   margin: 0 .5rem;
 }
 
+
 .pic-paragraph figure img{
 float: left;
 }
 
-.pic-paragraph span{
+.pic-paragraph p{
   float: right;
 }
 
@@ -102,4 +103,21 @@ float: left;
   height: 75vh;
   width: 100vw;
 }
+
+.quiz{
+  color:var(--text-secondary-color);
+  font-size: 1.1em;
+  padding: .25em;
+  margin: 0;
+  display: initial;
+}
+.quiz h3{
+  color: var(--primary-color);
+}
+
+#name{
+  float: center;
+}
+
+
 

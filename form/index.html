@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contact Me</title>
+    <title>MH Quiz</title>
 ​
     <link
       rel="stylesheet"
@@ -17,9 +17,10 @@
 ​
     <link rel="stylesheet" href="../styles.css" />
   </head>
+
   <body>
     <header>
-      <h1>MH Quiz</h1>
+      <h1>Mental Health Quiz</h1>
     <nav>
       <ul>
         <li class="button"><a href="../">Home</a></li>
@@ -28,71 +29,48 @@
       </ul>
     </nav>
   </header>
-    <main id="quiz">
-      <div class = "pic-paragraph">
-      <figure>
-        <img src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2018/07/GettyImages-897908472-609x419.jpg"
-        alt="Women Laughing">
-      </figure>
-      <p>Mental health is one of the most important parts of your overall health as research demonstrates it's influence on your physical health. Millions of people around the world struggle with moderate to severe mental health every day. Mental heath doesn't discriminate and affects people's ability to work, perform, create, compete, laugh, love, and participate in their everyday life.</p>
-      </div>
+<main class = "quiz">
+
+  <form action ="results.html" method="POST">
+
+    <h3>Please select the answer that best applies to you currently</h3>
   <div>
-      <form action="forms/non-existent-form-handler.php" method="POST">
-        </form>
+    <p>Please type your name</p>
+    <label for = "name">Name</label>
+    <input type = "text" id ="name">
   </div>
+
   <div>
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" placeholder="Full Name">
+    <p>Please rate your current stress levels on a scale of 1-10</p>
+    <label for= "stress">Stress Level</label>
+    <input id = "stress" type = "number" step ="1" >
   </div>
+
   <div>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" placeholder="you@somewhere.com">
+    <p>Please select the amount of time you have</p>
+    <label for ="time">Number of minutes</label>
+    <select id = "time" name= "number">
+      <option value = "10"> 15 minutes or less</option>
+      <option value ="10-20">15-30 minutes</option>
+      <option value = "30-45">30-45 minutes</option>
+      <option value = "45-60">45-60 minutes</option>
+      <option value = "60+">60+ minutes</option>
+    </select>
   </div>
+
   <div>
-    <label for="fone">Phone:</label>
-    <input type="tel" name="fone" id="fone">
+    <p>Do you have the ability to leave where you are and go to a class right now?</p>
+    <label for ="yes">Yes</label>
+    <input id = "yes" type = "radio" value = "yes">
+    <label for = "no">No</label>
+    <input id = "no" type = "radio" value = "no">
   </div>
-      <div>
-        <label for="msg">Enter your message:</label>
-        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-      </div>
-   <p>What's this message about?</p>
-   <div>
-     <input type="radio" name="subject" value="professional" id="pro" checked>
-     <label for="pro">I'd like to hire you!</label>
-   </div>
-   <div>
-     <input type="radio" name="subject" value="personal" id="personal">
-     <label for="personal">Personal message</label>
-   </div>
-   <div>
-     <input type="radio" name="subject" value="other">
-     <label>Don't know/something else</label>
-   </div>
-   <input type="checkbox" name="optin" value="trusting" id="news" checked>
-   <label for="news">Subscribe me to your newsletter!</label>
-   <div>
-    <label for="marketing">How did you hear about me?</label>
-   <select name="marketing">
-     <optgroup label="Online">
-       <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
-       <option value="github">Online Portfolio (GitHub)</option>
-       <option value="search">Search Engine</option>
-       <option value="email">Email</option>
-     </optgroup>
-     <optgroup label="In-Person">
-       <option value="networking">We met at a networking event</option>
-       <option value="referral">Personal referral</option>
-       <option value="random">We met somewhere else</option>
-     </optgroup>
-     <option value="other">Other</option>
-   </select>
-   </div>
-     <!-- Developer's Note: Default 'type' is "submit". -->
-    <button>Submit!</button>
- </form>
-        <button class="button--submit" type="submit">Submit</button>
-      </form>
+
+  <div>
+    <button type ="submit" id = 'submit'>Submit</button>
+  </div>
+  </form>
+
     </main>
     <footer>
       &copy; 2019 Savvy Coders
