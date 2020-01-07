@@ -1,6 +1,8 @@
-export default `<main>
+export default () =>
+  `
+ <main>
   <div id="mental-health-awareness" class="flex align-center justify-center">
-  <a href="./quiz/" class="button cta">Jump to the Quiz</a>
+  <a href="./form/" class="button cta">Jump to the Quiz</a>
   </div>
 
   <h1>You Are Not Alone</h1>

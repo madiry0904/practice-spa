@@ -1,7 +1,7 @@
-export default function() {
+export default function(st) {
   return `
   <header>
-  <h1>Mental Health Made Simple</h1>
+  <h1>${st.heading}</h1>
   <nav>
   <ul>
     <li class = "button"><a href="#">Home</a></li>
@@ -11,3 +11,8 @@ export default function() {
   </nav>
   </header>`;
 }
+
+//Arrow Syntax
+/*export default ()=>
+`header.........`
+*/

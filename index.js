@@ -3,7 +3,7 @@ import { Header, Main, Footer } from "./components";
 
 const state = {
   Home: {
-    heading: "Home"
+    heading: "Mental Health Made Simple"
   },
   Quiz: {
     heading: "Quiz"
@@ -13,4 +13,6 @@ const state = {
   }
 };
 
-document.querySelector("#root").innerHTML = `${Header()} ${Main} ${Footer}`;
+document.querySelector("#root").innerHTML = `${Header(
+  state.Home
+)} ${Main()} ${Footer()}`;
