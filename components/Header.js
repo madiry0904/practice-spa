@@ -9,6 +9,7 @@ export default function(st) {
     <li class = "button"><a href = "../resources/">STL Resources</a></li>
   </ul>
   </nav>
+
   </header>`;
 }
 
