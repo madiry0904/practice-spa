@@ -1,34 +1,36 @@
-import { Header, Main, Footer } from "./components";
-//console.log(Header, Nav, Main, Footer);
+import { Header, Nav, Main, Footer } from "./components";
+
+//console.log(Header, Footer, Main, Nav);
 
 const state = {
   Home: {
-    heading: "Mental Health Made Simple"
+    heading: "Home"
   },
-  Quiz: {
-    heading: "Quiz"
+  Form: {
+    heading: "Form"
+  },
+  Blog: {
+    heading: "Blog"
   },
   Gallery: {
-    heading: "STL Resources"
-  }
+    heading: "Gallery"
+  },
+  Links: ["Home", "Blog", "Gallery", "Contact"]
 };
 
 function render(st = state.Home) {
-  document.querySelector("#root").innerHTML = `${Header(st)}
- ${Main(st)}
- ${Footer(st)}`;
-}
-render();
+  document.querySelector("#root").innerHTML = `
+${Header(st)}
+${Nav(st.Links)}
+${Main(st)}
+${Footer(st)}`;
 
-//renders your page before you start to query the page
-//TODO LISTEN FOR CLICKS ON OUR MENU AND LOG WHAT WAS CLICKED
-
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    //console.log(event.target.textContent);
-
-    //TODO: USE THIS INFORMATION AND LOG OUT THE CORRECT PIECE OF STATE
-    render(state[event.target.textContent]); //MUST USE BRACKET NOTATION HERE
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      render(state[event.target.textContent]);
+    });
   });
-});
+}
+
+render(state);

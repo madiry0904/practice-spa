@@ -1,8 +1,15 @@
-export default =>()
-`<nav>
-  <ul>
-    <li class = "button"><a href="#">Home</a></li>
-    <li class = "button"><a href = "./quiz/">Quiz</a></li>
-    <li class = "button"><a href = "../resources/">STL Resources</a></li>
+function createListHTML(links) {
+  return links.map(link => {
+    return `<li>${link}</li>`;
+  });
+}
+
+export default st => {
+  console.log(st);
+  return `
+  <nav>
+  <ul class ="flex justify-space-around">
+  ${createListHTML(st)}
   </ul>
-  </nav>`
+</nav>`;
+};
