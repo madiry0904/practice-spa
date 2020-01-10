@@ -2,9 +2,9 @@ import { Header, Nav, Main, Footer } from "./components";
 
 import * as state from "./store";
 
-import capitalize from "lodash.capitalize";
+import Navigo from "navigo";
 
-console.log(location.pathname.slice(1));
+const router = new Navigo(location.origin);
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
