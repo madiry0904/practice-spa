@@ -13,14 +13,8 @@ ${Header(st)}
 ${Nav(state.Links)}
 ${Main(st)}
 ${Footer(st)}`;
-  document.querySelectorAll("nav ul").forEach(link => {
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      render(state[event.target.textContent]);
-    });
-  });
+  router.updatePageLinks();
 }
-render();
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
