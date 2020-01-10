@@ -2,11 +2,6 @@ import { Header, Nav, Main, Footer } from "./components";
 
 import * as state from "./store";
 
-import capitalize from "lodash.capitalize";
-
-console.log(capitalize("hello"));
-//console.log(Header, Footer, Main, Nav);
-
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
 ${Header(st)}
