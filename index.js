@@ -3,6 +3,7 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 
 import Navigo from "navigo";
+import capitalize from "lodash.capitalize";
 
 const router = new Navigo(location.origin);
 
@@ -20,3 +21,9 @@ ${Footer(st)}`;
   });
 }
 render();
+router
+  .on(":page", params => {
+    render(state[capitalize(params.page)]);
+  })
+  .on("/", () => render())
+  .resolve();
