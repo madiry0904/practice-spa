@@ -1,5 +1,10 @@
 function createListHTML(links) {
-  return links.map(link => `<li id="nav-buttons">${link}</li>`).join("");
+  return links
+    .map(
+      link =>
+        `<li id="nav-buttons"><a href ="./${link}/"data-navigo>${link}</a></li>`
+    )
+    .join("");
 }
 
 export default st => {
@@ -11,24 +16,14 @@ export default st => {
   </ul>
   </nav>`;
 };
-/*
 
+/*
 function createListHTML(links) {
   return links
     .map(
       link =>
-        `<li class="button"><a href ="./${link.toLowerCase()}/"data-navigo>${link}</a></li>`
+        `<li id="nav-buttons">${link}<a href ="./${link.toLowerCase()}/"data-navigo>${link}</a></li>`
     )
     .join("");
 }
-
-export default st => {
-  console.log(st);
-  return `
-  <nav>
-  <ul class ="flex button justify-space-around">
-  ${createListHTML(st)}
-  </ul>
-</nav>`;
-};
 */
