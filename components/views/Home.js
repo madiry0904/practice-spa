@@ -26,6 +26,6 @@ export default `
     </figure>
   </div>
 
-  <div class="flex bold--italic justify-center">
+  <div class=" bold--italic justify-center">
     <p>To get started simply go to the Quiz page!</p>
   </div>`;

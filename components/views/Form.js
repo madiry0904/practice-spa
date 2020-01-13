@@ -18,20 +18,10 @@ export default `
   <div class ="flex quiz">
     <label for ="time">Please select the amount of time you have</label>
     <select id = "time" name= "number">
-      <option value = "10"> 15 minutes or less</option>
-      <option value ="10-20">15-30 minutes</option>
-      <option value = "30-45">30-45 minutes</option>
-      <option value = "45-60">45-60 minutes</option>
-      <option value = "60+">60+ minutes</option>
+      <option value = "30"> 30 minutes or less</option>
+      <option value ="30-45">30-45 minutes</option>
+      <option value = "45">45 minutes or more</option>
     </select>
-  </div>
-
-  <div class ="quiz">
-    <label>Can you leave where you are and go to a class right now?</label>
-    <label for ="yes">Yes</label>
-    <input id = "yes" type = "radio" value = "yes">
-    <label for = "no">No</label>
-    <input id = "no" type = "radio" value = "no">
   </div>
 
   <div class="flex quiz justify-center">
