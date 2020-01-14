@@ -37,6 +37,9 @@ axios
   .get("https://jsonplaceholder.typicode.com/posts")
   .then(results => {
     state.Blog.posts = results.data;
-    console.log(results);
+
+    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Blog") {
+      render(state.Blog);
+    }
   })
   .catch(error => console.error(error));
