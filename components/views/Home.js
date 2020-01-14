@@ -1,4 +1,4 @@
-export default `
+export default st => `
   <div id="mental-health-awareness" class="flex align-center justify-center">
   <a href="./quiz/" id="cta">Jump to the Quiz</a>
   </div>

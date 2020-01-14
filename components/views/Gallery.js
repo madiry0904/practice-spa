@@ -1,4 +1,4 @@
-export default `
+export default st => `
 <div class= "flex ">
     <figure>
       <img src="https://i.pinimg.com/originals/31/73/fc/3173fca0842654aa5c6315b9d585b2ed.jpg">

@@ -11,10 +11,9 @@ import axios from "axios";
 console.log("Navigo");
 
 console.log(location.pathname.slice(1));
+//console.log(Header, Footer, Main, Nav);
 
 const router = new Navigo(location.origin);
-
-//console.log(Header, Footer, Main, Nav);
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -24,19 +23,20 @@ ${Main(st)}
 ${Footer(st)}`;
   router.updatePageLinks();
 }
-
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
   })
+  .on("/", () => render())
   .resolve();
 
 render();
 
+// 'fetch' returns a PROMISE.
 axios
   .get("https://jsonplaceholder.typicode.com/posts")
   .then(results => {
-    state.Position.posts = results.data;
+    state.Blog.posts = results.data;
     console.log(results);
   })
-  .catch(error => console.log(error));
+  .catch(error => console.error(error));

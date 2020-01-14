@@ -1,36 +1,32 @@
-// const stress30 = [
-//   "Count your breaths!",
-//   "DIY Aromatherapy",
-//   "Stress reducing supplements"
-// ];
-
-// const random30 = stress30[Math.floor(Math.random() * (stress30.length +1))];
-
-// function lowStress(number, time) {
-//   if (number <= 3 && time === 30) {
-//     return random30;
-//   }
-// }
-// console.log(lowStress(2, 30));
-
-const stress45 = [
+const lowStress30 = [
+  "Count your breaths!",
+  "DIY Aromatherapy",
+  "Stress reducing supplements"
+];
+const lowStress45 = [
   "Do this guided meditation",
   "Make a list of all you've accomplished so far in the day",
   "Consider lowering your caffeine intake"
 ];
+const lowStress60 = [
+  "Make a gratitute list of 10 things you're grateful for in this moment",
+  "Do this chair yoga routine for stress reduction",
+  "Journal about what you're feeling"
+];
 
-const random45 = stress45[Math.floor(Math.random() * (stress45.length + 1))];
+const lowRandom30 = lowStress30[Math.floor(Math.random() * lowStress30.length)];
 
-function mediumStress(number, time) {
-  if (number > 3 && number <= 6 && time === 45) {
-    return random45;
+const lowRandom45 = lowStress45[Math.floor(Math.random() * lowStress45.length)];
+
+const lowRandom60 = lowStress60[Math.floor(Math.random() * lowStress60.length)];
+
+function stress(number, time) {
+  if (number <= 3 && time === 30) {
+    return lowRandom30;
+  } else if (number <= 3 && time === 45) {
+    return lowRandom45;
+  } else if (number <= 3 && time === 60) {
+    return lowRandom60;
   }
 }
-
-console.log(mediumStress(4, 45));
-
-// const stress60 = [
-//   "Make a gratitute list of 10 things you're grateful for in this moment",
-//   "Do this chair yoga routine for stress reduction",
-//   "Journal about what you're feeling"
-// ];
+console.log(stress(3, 45));
