@@ -1,4 +1,5 @@
 export default {
   heading: "Blog",
-  mainContent: "Blog"
+  mainContent: "Blog",
+  posts: []
 };
