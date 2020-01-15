@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+import "../env.js";
 
 export default {
   apiKey: `${process.env.FIRESTORE_API}`,
