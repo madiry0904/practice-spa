@@ -16,14 +16,3 @@ export default st => {
   </ul>
   </nav>`;
 };
-
-/*
-function createListHTML(links) {
-  return links
-    .map(
-      link =>
-        `<li id="nav-buttons">${link}<a href ="./${link.toLowerCase()}/"data-navigo>${link}</a></li>`
-    )
-    .join("");
-}
-*/

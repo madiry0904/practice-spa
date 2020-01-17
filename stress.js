@@ -20,7 +20,7 @@ const lowRandom45 = lowStress45[Math.floor(Math.random() * lowStress45.length)];
 
 const lowRandom60 = lowStress60[Math.floor(Math.random() * lowStress60.length)];
 
-function stress(number, time) {
+export function lowStress(number, time) {
   if (number <= 3 && time === 30) {
     return lowRandom30;
   } else if (number <= 3 && time === 45) {
@@ -29,4 +29,4 @@ function stress(number, time) {
     return lowRandom60;
   }
 }
-console.log(stress(3, 45));
+// console.log(lowStress(3, 30));

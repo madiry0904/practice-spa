@@ -8,6 +8,12 @@ import Navigo from "navigo";
 
 import axios from "axios";
 
+import { db } from "./firebase";
+
+import { getFormDataFromIds } from "./lib";
+
+import { lowStress } from "./stress";
+
 console.log("Navigo");
 
 console.log(location.pathname.slice(1));
@@ -26,20 +32,15 @@ ${Footer(st)}`;
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
-  })
-  .on("/", () => render())
-  .resolve();
+    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Form") {
+      document.querySelector("form").addEventListener("submit", event => {
+        event.preventDefault();
 
-render();
-
-// 'fetch' returns a PROMISE.
-axios
-  .get("https://jsonplaceholder.typicode.com/posts")
-  .then(results => {
-    state.Blog.posts = results.data;
-
-    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Blog") {
-      render(state.Blog);
+        document.querySelector("#mental-health-ideas").innerHTML;
+        console.log(lowStress(event.target.elements[time]));
+        console.log(lowStress(event.target.elements[stress]));
+      });
     }
   })
-  .catch(error => console.error(error));
+  .on("/", render())
+  .resolve();
