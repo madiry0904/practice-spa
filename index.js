@@ -6,18 +6,9 @@ import capitalize from "lodash.capitalize";
 
 import Navigo from "navigo";
 
-import axios from "axios";
-
-import { db } from "./firebase";
-
 import { getFormDataFromIds } from "./lib";
 
-import { lowStress } from "./stress";
-
-console.log("Navigo");
-
-console.log(location.pathname.slice(1));
-//console.log(Header, Footer, Main, Nav);
+import { lowStress } from "./lib";
 
 const router = new Navigo(location.origin);
 
@@ -35,10 +26,11 @@ router
     if (capitalize(router.lastRouteResolved().url.slice(1)) === "Form") {
       document.querySelector("form").addEventListener("submit", event => {
         event.preventDefault();
+        const stuff = getFormDataFromIds(event.target.elements);
+        const test = lowStress(stuff.stress, stuff.time);
 
-        document.querySelector("#mental-health-ideas").innerHTML;
-        console.log(lowStress(event.target.elements[time]));
-        console.log(lowStress(event.target.elements[stress]));
+        document.querySelector("#ideas").innerHTML = `
+        ${test}`;
       });
     }
   })

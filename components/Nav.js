@@ -8,7 +8,6 @@ function createListHTML(links) {
 }
 
 export default st => {
-  console.log(st);
   return `
   <nav class="flex menu-wrap justify-end" >
     <ul>

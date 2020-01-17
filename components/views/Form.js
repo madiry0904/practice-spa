@@ -24,7 +24,7 @@ export default st => `
     </select>
   </div>
 
-  <div id = "mental-health-ideas"> </div>
+  <div id = "ideas"> </div>
 
   <div class="flex quiz justify-center">
     <button type ="submit">Submit</button>
