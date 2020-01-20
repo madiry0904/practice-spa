@@ -19,8 +19,8 @@ export default st => `
     <label for ="time">Please select the amount of time you have</label>
     <select id = "time" name= "number">
       <option value = "30"> 30 minutes or less</option>
-      <option value ="30-45">30-45 minutes</option>
-      <option value = "45">45 minutes or more</option>
+      <option value ="45">45 minutes</option>
+      <option value = "60">60 minutes or more</option>
     </select>
   </div>
 

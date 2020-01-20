@@ -5,10 +5,3 @@ export default () => `
 <i class="fab fa-instagram"></i>
 <i class="fab fa-github-square"></i>
 </footer>`;
-
-/*
-export default () =>
-  `<footer>
-&copy; 2019 Savvy Coders
-</footer>`;
-*/

@@ -8,7 +8,7 @@ import Navigo from "navigo";
 
 import { getFormDataFromIds } from "./lib";
 
-import { lowStress } from "./lib";
+import { stressIdeas } from "./lib";
 
 const router = new Navigo(location.origin);
 
@@ -23,11 +23,11 @@ ${Footer(st)}`;
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
-    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Form") {
+    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Quiz") {
       document.querySelector("form").addEventListener("submit", event => {
         event.preventDefault();
         const stuff = getFormDataFromIds(event.target.elements);
-        const test = lowStress(stuff.stress, stuff.time);
+        const test = stressIdeas(stuff.stress, stuff.time);
 
         document.querySelector("#ideas").innerHTML = `
         ${test}`;
